@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css2? family = Poppins: ital, wght @ 1.900 & display = swap "rel =" stylesheet ">
+    <script>
+      function calc(){
+          let n1=parseFloat(document.getElementById("n1").value);
+          let n2=parseFloat(document.getElementById("n2").value);
+          let m=(n1 + n2) / 2;
+          document.getElementById("média").innerHTML=m ;
+      }
+     
+
+
+    </script>
+
+
+</head>
+<body>
+    <div class="container">
+      <h1>Calcule sua Média</h1>
+      <input id="n1" type="number" name="Nota1" placeholder="Nota 1"> <br>
+      <input id="n2" type="number" name="Nota2" placeholder="Nota 2"> <br>
+      <button onclick="calc()">Calcule</button>
+      <h2 id="média"></h2>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
